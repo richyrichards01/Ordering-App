@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resturant App</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <main class="container">
+      <section class="hero">
+        <h1>Francis Diner</h1>
+        <p>The best Burger and Pizzas in Town</p>
+      </section>
+      <section>
+        <form id="payment-form" class="payment-form hidden">
+          <div class="form-container">
+            <h3>Enter Card Details</h3>
+            <input
+              id="name"
+              type="text"
+              name="fullname"
+              min
+              placeholder="Enter your name"
+              required
+            />
+            <input
+              id="creditcard"
+              type="number"
+              name="creditcard"
+              placeholder="Enter card number"
+              min="16"
+              required
+            />
+            <input
+              id="CVV"
+              type="number"
+              name="CVV"
+              placeholder="Enter CVV"
+              min="3"
+              required
+            />
+            <button data-pay="pay" id="pay-btn" class="pay-btn">Pay</button>
+          </div>
+        </form>
+      </section>
+      <section class="section-two">
+        <div id="feed" class="feed"></div>
+      </section>
+
+      <section class="section-three">
+        <div id="order-items">
+          <h3>Your order</h3>
+        </div>
+      </section>
+
+      <section class="section-four">
+        <div class="total-price" id="total-price">
+          <h3>Total Price:</h3>
+        </div>
+        <div class="btn-section">
+          <button class="btn-order" id="btn-order" data-complete="complete">
+            Complete Order
+          </button>
+        </div>
+      </section>
+
+      <section>
+        <div class="comfirm-message" id="comfirm-message"></div>
+      </section>
+    </main>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
